@@ -13,115 +13,151 @@
   <body class="body">
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
       <fieldset class="fieldset">
-        <legend>Personal information</legend>
+        <legend class="legend">Personal information</legend>
 
-        <div class="container top-container">
-          <label class="label" for="surname">Surname:
-            <input type="text"
-                   name="surname"
-                   autocomplete="off"
-                   id="surname"
-                   required>
+        <div class="container">
+          <label class="label" for="surname">
+            Surname:
+            <input
+              type="text"
+              name="surname"
+              autocomplete="off"
+              id="surname"
+              required
+            >
           </label>
         </div>
 
         <div class="container">
-          <label class="label" for="name">Name:
-            <input type="text"
-                   name="name"
-                   autocomplete="off"
-                   id="name"
-                   value="name"
-                   required>
+          <label class="label" for="name">
+            Name:
+            <input
+              type="text"
+              name="name"
+              autocomplete="off"
+              id="name"
+              value="name"
+              required
+            >
           </label>
         </div>
 
         <div class="container">
-          <label class="label" for="age">How old are You?
-            <input type="number"
-                   name="age"
-                   autocomplete="off"
-                   value="12"
-                   id="age"
-                   min="1"
-                   max="100">
+          <label class="label" for="age">
+            How old are You?
+            <input
+              type="number"
+              name="age"
+              autocomplete="off"
+              value="12"
+              id="age"
+              min="1"
+              max="100"
+            >
           </label>
         </div>
 
         <div class="container">
-          <label for="birth">Full date of birth:
-            <input type="date"
-                   autocomplete="off"
-                   name="date"
-                   id="birth">
+          <label for="birth">
+            Full date of birth:
+            <input
+              type="date"
+              autocomplete="off"
+              name="date"
+              id="birth"
+            >
           </label>
         </div>
 
-        <div class="container bottom-container">
-          <label class="label" for="agreement">I accept the term of the agreement
-            <input class="last-input"
-                   type="checkbox"
-                   name="agreement"
-                   value="agree"
-                   id="agreement"
-                   required>
+        <div class="container">
+          <label class="label" for="agreement">
+            I accept the term of the agreement
+            <input
+              class="last-input"
+              type="checkbox"
+              name="agreement"
+              value="agree"
+              id="agreement"
+              required
+            >
           </label>
         </div>
       </fieldset>
 
       <fieldset class="fieldset">
-        <legend>Registration</legend>
+        <legend class="legend">Registration</legend>
 
-        <div class="container top-container">
-          <label class="label" for="email">E-mail:
-            <input class="input"
-                   type="email"
-                   placeholder="email@example.com"
-                   id="email"
-                   required>
+        <div class="container">
+          <label class="label" for="email">
+            E-mail:
+            <input
+              class="input"
+              type="email"
+              placeholder="email@example.com"
+              id="email"
+              required
+            >
           </label>
         </div>
 
-        <div class="container bottom-container">
-          <label class="label" for="password">Password:
-            <input class="last-input"
-                   type="password"
-                   autocomplete="off"
-                   name="password"
-                   id="password"
-                   required>
+        <div class="container">
+          <label class="label" for="password">
+            Password:
+            <input
+              class="last-input"
+              type="password"
+              autocomplete="off"
+              name="password"
+              id="password"
+              required
+            >
           </label>
         </div>
       </fieldset>
 
       <fieldset class="fieldset">
-        <legend>An interesting fact about you!</legend>
+        <legend class="legend">An interesting fact about you!</legend>
+        <div class="container">
+          <label class="label" for="fact">
+            Do you love cats?
+            <label for="yes">
+              <input
+                class="input"
+                type="radio"
+                name="fact"
+              >
+              Yes
+            </label>
 
-        <div class="container top-container">
-          <label class="label" for="fact">Do you love cats?
-            <input class="input"
-                   type="radio"
-                   name="fact"> Yes
-            <input class="input"
-                   type="radio"
-                   name="fact"> No
+            <label for="no">
+              <input
+                class="input"
+                type="radio"
+                name="fact"
+              >
+              No
+            </label>
           </label>
 
         </div>
         <div class="container">
           <label class="label" for="color">What is your favorite color?
-            <input class="input"
-                   type="color"
-                   name="color"
-                   id="color">
+            <input
+              class="input"
+              type="color"
+              name="color"
+              id="color"
+            >
           </label>
         </div>
 
         <div class="container">
           <label class="label" for="time">What time do you go to bed?
-            <input type="time"
-                   name="time"
-                   id="time">
+            <input
+              type="time"
+              name="time"
+              id="time"
+            >
           </label>
         </div>
 
@@ -135,7 +171,7 @@
           </label>
         </div>
 
-        <div class="container bottom-container">
+        <div class="container">
           <label class="label" for="rate">How do you rate our work?
             <input
               class="last-input"
@@ -146,23 +182,23 @@
               name="work rate"
               autocomplete="off"
               id="rate"
-              value="0">
+              value="0"
+            >
           </label>
         </div>
       </fieldset>
 
       <fieldset class="fieldset">
-        <legend>Additional info:</legend>
+        <legend class="legend">Additional info:</legend>
 
-        <div class="container top-container">
+        <div class="container">
           <label class="label" for="info">Comments:
-            <textarea name="additional info"
-                      id="info">
+            <textarea name="additional info" id="info">
             </textarea>
           </label>
         </div>
 
-        <div class="container bottom-container">
+        <div class="container">
           <label class="label" for="recomendation">Would you reccomend us?
             <select name="recomendation" id="recomendation">
               <option value="yes">yes</option>
@@ -173,8 +209,10 @@
 
       </fieldset>
       <label for="submit">
-        <input type="submit"
-               id="submit">
+        <input
+          type="submit"
+          id="submit"
+        >
       </label>
     </form>
     <script type="text/javascript" src="./main.js"></script>

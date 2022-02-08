@@ -7,10 +7,10 @@
   margin-bottom: 20px;
 }
 
-.bottom-container {
-  margin-bottom: 0;
+.legend + .container {
+  margin-top: 0;
 }
 
-.top-container {
-  margin-top: 0;
+.fieldset > :last-child {
+  margin-bottom: 0;
 }
